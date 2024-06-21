@@ -16,11 +16,11 @@ Objetivo 2 - caso a lista de botões de plataformas já esteja aparecendo e o us
 
 */
 
-const botao = document.querySelector(".btn-plataforma");
-const elementoPlataformas = document.querySelector(".btn-plataforma .plataformas");
+document.addEventListener("DOMContentLoaded", () => {
+    const botao = document.querySelector(".btn-plataforma");
+    const elementoPlataformas = botao.querySelector(".plataformas");
 
-botao.addEventListener("click", () => {
-    elementoPlataformas.classList.toggle("ativo");
+    botao.addEventListener("click", () => {
+        elementoPlataformas.classList.toggle("ativo");
+    });
 });
-
-
